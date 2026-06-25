@@ -1,38 +1,95 @@
 ﻿# Ponderada OpenChoreo
 
-Entrega individual da atividade de validação local do OpenChoreo com Docker, interface Backstage/OpenChoreo em execução e deploy da aplicação de exemplo.
+Entrega individual da atividade de validação local do OpenChoreo, com instalação completa via Docker, acesso à interface do portal e publicação da aplicação React de exemplo.
 
-## Repositório
+## Visão Geral
 
-- Repositório GitHub: https://github.com/tvolcati/ponderada-openchoreo-thiago-almeida
-- Branch de trabalho: `feat/openchoreo-entrega`
-- Documentação principal: `docs/instalacao-openchoreo.md`
-- Roteiro do vídeo: `docs/roteiro-video.md`
+- Status: concluído com sucesso
+- Caminho executado: `Caminho A`
+- Plataforma de versionamento usada na entrega: `GitHub`
+- Pull Request: `https://github.com/tvolcati/ponderada-openchoreo-thiago-almeida/pull/1`
 
-## Resultado final
+## Stack Utilizada
 
-- Instância local do OpenChoreo instalada com sucesso.
-- Interface acessível em `http://openchoreo.localhost:8080/`.
-- Aplicação exemplo publicada com sucesso.
-- Evidências reais armazenadas em `docs/evidencias/`.
-- Histórico com commits no padrão Conventional Commits.
+- Sistema operacional: `Windows 11`
+- Container runtime: `Docker Desktop 4.57.0`
+- Docker Engine: `29.1.3`
+- OpenChoreo Quick Start: `ghcr.io/openchoreo/quick-start:v1.1.1`
+- Kubernetes local: `k3d` com `k3s`
+- Automação de evidências: `Python`, `Selenium`, `Google Chrome Headless`
 
-## URLs validadas
+## Resultados Obtidos
 
-- OpenChoreo Portal: `http://openchoreo.localhost:8080/`
+- Instância local do OpenChoreo instalada com sucesso
+- Portal acessível em `http://openchoreo.localhost:8080/`
+- Validação interna concluída com `check-status.sh` e `validate-installation.sh`
+- Aplicação de exemplo `react-starter` publicada com sucesso
+- Evidências reais organizadas em `docs/evidencias/`
+- Histórico com mais de 10 commits em Conventional Commits
+
+## Links e Acessos
+
+- Repositório: `https://github.com/tvolcati/ponderada-openchoreo-thiago-almeida`
+- Pull Request: `https://github.com/tvolcati/ponderada-openchoreo-thiago-almeida/pull/1`
+- Portal OpenChoreo: `http://openchoreo.localhost:8080/`
 - OpenChoreo API: `http://api.openchoreo.localhost:8080/`
 - Thunder UI: `http://thunder.openchoreo.localhost:8080/console`
 - React Starter: `http://http-react-starter-development-default-cde5190f.openchoreoapis.localhost:19080`
 
-## Evidências principais
+## Estrutura do Repositório
 
-- Ambiente: `docs/evidencias/01-sistema-operacional.txt` a `04-recursos-docker.txt`
-- Quick Start e instalação: `docs/evidencias/05-quick-start-container.txt`, `06-install-openchoreo.txt`, `07-install-openchoreo-corrigido.txt`
-- Validação: `docs/evidencias/08-check-status.txt`, `09-validate-installation.txt`
-- Interface: `docs/evidencias/11-openchoreo-login-page.png`, `12-thunder-login-page.png`, `13-openchoreo-home.png`
-- Aplicação exemplo: `docs/evidencias/15-deploy-react-starter.txt`, `23-react-starter-app.png`
-- Recursos Kubernetes/OpenChoreo: `docs/evidencias/16-kubectl-namespaces.txt` a `21-kubectl-components.txt`
+```text
+.
+|-- README.md
+|-- docs
+|   |-- apresentacao
+|   |   |-- README.md
+|   |   `-- roteiro-video.md
+|   |-- evidencias
+|   `-- instalacao-openchoreo.md
+`-- scripts
+    `-- capture_openchoreo.py
+```
 
-## Observação sobre o enunciado
+## Navegação Rápida
 
-O enunciado original pedia GitLab e Merge Request. Esta execução foi realizada no GitHub por decisão operacional, usando `gh` já autenticado no ambiente. O equivalente entregue aqui é um Pull Request para `main`.
+- Documentação principal: [`docs/instalacao-openchoreo.md`](docs/instalacao-openchoreo.md)
+- Evidências: [`docs/evidencias/`](docs/evidencias/)
+- Apresentação e vídeo: [`docs/apresentacao/README.md`](docs/apresentacao/README.md)
+- Roteiro do vídeo: [`docs/apresentacao/roteiro-video.md`](docs/apresentacao/roteiro-video.md)
+
+## Evidências Visuais
+
+### Portal do OpenChoreo
+
+![Tela inicial do portal](docs/evidencias/11-openchoreo-login-page.png)
+
+### Login no Thunder
+
+![Tela de autenticação do Thunder](docs/evidencias/12-thunder-login-page.png)
+
+### Home autenticada do OpenChoreo
+
+![Home do OpenChoreo após login](docs/evidencias/13-openchoreo-home.png)
+
+### Aplicação de exemplo publicada
+
+![React Starter publicado](docs/evidencias/23-react-starter-app.png)
+
+## Documentos Principais
+
+- `docs/instalacao-openchoreo.md`
+  - ambiente utilizado
+  - requisitos e comparação com o host
+  - comandos executados
+  - problemas encontrados e soluções adotadas
+  - recursos da plataforma e interpretação técnica
+- `docs/apresentacao/README.md`
+  - espaço para o link final do vídeo
+  - observação indicando que o roteiro está disponível caso o vídeo apresente erro
+- `docs/apresentacao/roteiro-video.md`
+  - roteiro completo da apresentação em até 5 minutos
+
+## Observação Sobre o Enunciado
+
+O enunciado original mencionava GitLab e Merge Request. Esta execução foi operacionalizada no GitHub por decisão prática, usando `gh` já autenticado no ambiente. O equivalente entregue é uma Pull Request para `main`.
