@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#5567d5">
+    <meta name="description" content="OpenChoreo - An open source platform for building and managing cloud-native applications">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+    <link rel="icon" href="/openchoreo-icon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5567d5">
+    <title>OpenChoreo Portal</title>
+  <meta name="backstage-app-mode" content="public"><meta name="backstage-public-path" content="/"><script defer="" src="/static/runtime.e806165f.js"></script><script defer="" src="/static/module-backstage.ddace7f9.js"></script><script defer="" src="/static/module-material-ui.c93ad972.js"></script><script defer="" src="/static/module-yaml.85dcfa9e.js"></script><script defer="" src="/static/module-lodash.f40fcb22.js"></script><script defer="" src="/static/module-lodash-es.3bcf5ed1.js"></script><script defer="" src="/static/module-rjsf.8272fac4.js"></script><script defer="" src="/static/module-mui.d2d7209b.js"></script><script defer="" src="/static/module-wso2.d27221bd.js"></script><script defer="" src="/static/module-date-fns.4bb0d41c.js"></script><script defer="" src="/static/module-azure.3d5c838e.js"></script><script defer="" src="/static/module-graphql.d0d19d15.js"></script><script defer="" src="/static/module-projectstorm.a14745f6.js"></script><script defer="" src="/static/module-backstage-community.2fd21243.js"></script><script defer="" src="/static/module-ajv.21bde275.js"></script><script defer="" src="/static/module-typespec.9a09069a.js"></script><script defer="" src="/static/module-json-schema-library.3a78ebac.js"></script><script defer="" src="/static/module-mdast-util-from-markdown.37b1be40.js"></script><script defer="" src="/static/module-material-table.33ea032c.js"></script><script defer="" src="/static/module-react-beautiful-dnd.b49ab829.js"></script><script defer="" src="/static/module-graphql-language-service.58a66214.js"></script><script defer="" src="/static/module-micromark-core-commonmark.49b46bb7.js"></script><script defer="" src="/static/module-remark-gfm.345d871e.js"></script><script defer="" src="/static/module-react-syntax-highlighter.73ee490f.js"></script><script defer="" src="/static/module-react-markdown.992bc82d.js"></script><script defer="" src="/static/module-octokit.f5c59ab9.js"></script><script defer="" src="/static/module-codemirror.60ccf9f5.js"></script><script defer="" src="/static/module-zod.edbfee18.js"></script><script defer="" src="/static/module-gitbeaker.5aa98767.js"></script><script defer="" src="/static/module-react-dom.c45aafc5.js"></script><script defer="" src="/static/module-gsap.eb45eef0.js"></script><script defer="" src="/static/module-xterm.cffe29ff.js"></script><script defer="" src="/static/module-photoswipe.e6faf18d.js"></script><script defer="" src="/static/module-lezer.3d00ed67.js"></script><script defer="" src="/static/module-react-hook-form.af1083b9.js"></script><script defer="" src="/static/module-luxon.405a3f34.js"></script><script defer="" src="/static/module-js-yaml.f9fdf839.js"></script><script defer="" src="/static/module-i18next.f5a0205d.js"></script><script defer="" src="/static/module-remix-run.952ce0ee.js"></script><script defer="" src="/static/vendor.0f7f02e2.js"></script><script defer="" src="/static/main.5318f93d.js"></script><link href="/static/vendor.f42697cb.css" rel="stylesheet">
+<script type="backstage.io/config">
+[
+  {
+    "context": "app",
+    "deprecatedKeys": [],
+    "data": {
+      "backend": {
+        "baseUrl": "http://openchoreo.localhost:8080"
+      },
+      "enableExperimentalRedirectFlow": "true",
+      "app": {
+        "title": "OpenChoreo Portal",
+        "baseUrl": "http://openchoreo.localhost:8080"
+      },
+      "techdocs": {
+        "builder": "local"
+      },
+      "auth": {
+        "providers": {
+          "openchoreo-auth": {}
+        }
+      },
+      "openchoreo": {
+        "features": {
+          "workflows": {
+            "enabled": "true"
+          },
+          "observability": {
+            "enabled": "true"
+          },
+          "auth": {
+            "enabled": "true"
+          },
+          "authz": {
+            "enabled": "true"
+          },
+          "assistant": {
+            "enabled": "false"
+          },
+          "secretManagement": {
+            "enabled": "true"
+          }
+        }
+      },
+      "permission": {
+        "enabled": "true"
+      }
+    }
+  }
+]
+</script>
+<style data-jss="" data-meta="MuiBox">
+
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiCssBaseline">
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.9333333333333333rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #ffffff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+body, html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+}
+nav[aria-label="sidebar nav"] hr {
+  opacity: 0.2;
+}
+g[data-testid="node"] rect.primary {
+  fill: #5568c4 !important;
+  stroke: #5568c4 !important;
+  stroke-width: 2px !important;
+}
+g[data-testid="node"] rect.secondary {
+  fill: #374151 !important;
+  stroke: #374151 !important;
+  stroke-width: 2px !important;
+}
+.MuiTab-root:hover {
+  color: #111827 !important;
+  text-decoration: none !important;
+  background-color: rgba(17, 24, 39, 0.1) !important;
+}
+a[role="tab"]:hover {
+  color: #111827 !important;
+  text-decoration: none !important;
+  background-color: rgba(17, 24, 39, 0.1) !important;
+}
+</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="MuiBox-root jss4-1" data-testid="progress"></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `yarn start`.
+      To create a production bundle, use `yarn build`.
+    -->
+  
+
+</body></html>
