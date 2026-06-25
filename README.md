@@ -36,6 +36,10 @@ Entrega individual da ponderada de OpenChoreo com instalação local completa, v
     <td><strong>Branch</strong></td>
     <td><code>feat/openchoreo-entrega</code></td>
   </tr>
+  <tr>
+    <td><strong>Link do Vídeo</strong></td>
+    <td><code>https://youtu.be/UGwwjvpI_B4</code></td>
+  </tr>
 </table>
 
 ## Stack Utilizada
