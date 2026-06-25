@@ -1,0 +1,7 @@
+﻿
+
+TotalPhysicalMemory       : 16890322944
+NumberOfLogicalProcessors : 16
+
+
+

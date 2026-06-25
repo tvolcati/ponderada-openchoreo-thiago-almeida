@@ -1,0 +1,10 @@
+﻿
+
+Caption                : Microsoft Windows 11 Home Single Language
+Version                : 10.0.26200
+OSArchitecture         : 64 bits
+TotalVisibleMemorySize : 16494456
+FreePhysicalMemory     : 4387804
+
+
+
